@@ -17,6 +17,11 @@ h1 {
     text-align: center;
 }
 
+p, h2 {
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
 .nav-bar-item {
     float: left;
     display: block;
