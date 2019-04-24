@@ -3,7 +3,7 @@ html {
 }
 
 *,*:before,*:after {
-    box-sizing:inherit
+    box-sizing: inherit;
 }
 
 body {
@@ -20,6 +20,20 @@ h1 {
 p, h2 {
     padding-left: 1%;
     padding-bottom: 1%;
+}
+
+.chart {
+    margin: 0;
+}
+
+.dataSelection {
+    float: left;
+    display: block;
+    padding-left: 2.5%;
+}
+
+#info {
+    width: 200px;
 }
 
 .nav-bar-item {

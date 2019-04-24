@@ -7,6 +7,15 @@
     <title>Greenhouse DAQ: Current Data</title>
     <link rel="stylesheet" href="pages.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript"
+    src="https://www.google.com/jsapi?autoload={
+      'modules':[{
+        'name':'visualization',
+        'version':'1',
+        'packages':['corechart']
+      }]
+    }"></script>
   </head>
   <body>
     <nav class="nav-bar">
@@ -16,5 +25,16 @@
       <a href="About.html" class="nav-bar-item">About</a>
     </nav>
     <h1>Welcome to the Current Data</h1>
+    <div class="chart" style="width: 900px; height: 500px"></div>
+    <div class="dataSelection">
+      <label for="info">Select Data Entries</label>
+      <select id="info" name="info">
+        <option value="Temperature">Temperature</option>
+        <option value="Humidity">Humidity</option>
+      </select>
+      <button id="button">Select</button>
+      <div id="demo"></div>
+    </div>
+    <script src="data.js"></script>
   </body>
 </html>
