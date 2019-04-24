@@ -9,6 +9,22 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
   </head>
   <body>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-storage.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDIr8kYiG_wxTjTL6Uq1nv-LeLcd_MPYRs",
+        authDomain: "demodeploymentapp.firebaseapp.com",
+        databaseURL: "https://demodeploymentapp.firebaseio.com",
+        projectId: "demodeploymentapp",
+        storageBucket: "demodeploymentapp.appspot.com",
+        messagingSenderId: "365411631981"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <nav class="nav-bar">
       <a href="index.html" class="nav-bar-item">Home</a>
       <a href="CurrentData.html" class="nav-bar-item">Grab Current Data</a>
