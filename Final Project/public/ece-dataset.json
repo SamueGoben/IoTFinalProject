@@ -1,0 +1,5 @@
+{ "course": "ECE160", "pricenew":  "221.75", "priceused": "165.50", "title": "DSP First", "author": " MCCLELLAN ", "edition": "2ND", "isbn": "9780136019251", "publisher": "PEARSON", "availability": "T" }
+{ "course": "ECE203", "pricenew":  "154.50", "priceused": "126.00", "title": "Nilsson with Mastering 2018", "author": "NILSSON CUSTOM", "edition": "N/A", "isbn": "9781323863893", "publisher": "PEARSONCONS", "availability": "T" }
+{ "course": "ECE204", "pricenew":  "141.75", "priceused": "N/A", "title": "Electric Circuits", "author": "NILSSON CUSTOM", "edition": "N/A", "isbn": "9781323500606", "publisher": "PEARSON", "availability": "T" }
+{ "course": "ECE300", "pricenew":  "N/A", "priceused": " N/A ", "title": " N/A ", "author": " N/A ", "edition": " N/A ", "isbn": " N/A ", "publisher": " N/A ", "availability": "T" }
+{ "course": "ECE340", "pricenew":  "176.75", "priceused": "235.50", "title": "Applied Electromagnetics", "author": " WENTWORTH ", "edition": "7th", "isbn": "9780470042571", "publisher": "WILEY", "availability": "T" }
