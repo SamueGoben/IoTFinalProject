@@ -38,7 +38,7 @@ ui.start("#firebaseui-auth-container", uiConfig);
 
 // This function will trigger when there is a login event
 firebase.auth().onAuthStateChanged(function(user) {
-  console.log(user)
+  console.log(user);
   // Make sure there is a valid user object
   if (user) {
     var script = document.createElement("script");
@@ -83,7 +83,7 @@ function startApp(user) {
       singleEvents: true,
       maxResults: 10,
       orderBy: "startTime"
-    })
+    });
   })
   .then(function(response) {
     console.log(response);

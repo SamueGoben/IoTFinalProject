@@ -17,7 +17,7 @@
         group: payload.group,
         email: payload.email,
         username: payload.uid
-      }
+      };
     };
     var getRosefireToken = function(registryToken, callback) {
       var token = encodeURIComponent(registryToken);
