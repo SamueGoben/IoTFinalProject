@@ -15,7 +15,6 @@ var options = { method: 'GET',
      Connection: 'keep-alive',
      'accept-encoding': 'gzip, deflate',
      Host: 'storage.googleapis.com',
-     'Postman-Token': '30436ad8-686c-40f4-8481-7d1049c87f93,f6e47a80-05f2-48ad-b307-8614fb50749e',
      'Cache-Control': 'no-cache',
      Accept: '*/*',
      'User-Agent': 'PostmanRuntime/7.11.0' } };
