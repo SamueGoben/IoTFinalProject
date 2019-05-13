@@ -213,7 +213,7 @@ function determineAPIfields(channel){
     channelID = '759369';
 
     pubTopic = 'channels/'+channelID+'/publish/fields/'; 
-    subTopic = 'channels/480910/subscribe/fields/+/V9MCF08KEH3UZYEB';
+    subTopic = 'channels/759369/subscribe/fields/+/V9MCF08KEH3UZYEB';
     //these cannot not have capital letters
     projectFields = ["tempc", "humidity-percent", "pressure-kpa", "fan-status", "vent-status", "user-override"];
 
@@ -227,7 +227,7 @@ function determineAPIfields(channel){
     channelID = '776756';
 
     pubTopic = 'channels/'+channelID+'/publish/fields/'; 
-    subTopic = 'channels/480910/subscribe/fields/+/LKKUM8Y741JBBGHH';
+    subTopic = 'channels/776756/subscribe/fields/+/LKKUM8Y741JBBGHH';
     //these cannot not have capital letters
     projectFields = ["tempc", "humidity-percent", "soilmoisture", "rain", "pump-status"];
 
@@ -235,7 +235,7 @@ function determineAPIfields(channel){
 
 }
 
-determineAPIfields('480910');
+determineAPIfields('759369');
 //console.log(fields[0]);
 
 // Connect to MQTT broker at Thingspeak
