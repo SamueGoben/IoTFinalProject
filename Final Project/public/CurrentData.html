@@ -35,6 +35,28 @@
       <button id="button">Select</button>
       <div id="demo"></div>
     </div>
+    <div class="actuate-selection">
+        <label for="actuate">Sensor Actuators</label>
+        <select id="actuate" name="actuate">
+            <option value="Fan">Fan</option>
+            <option value="Vent">Vent</option>
+            <option value="Fan and Vent">Fan and Vent</option>
+      </select>
+        <button id="button-select-open">Open</button>
+        <button id="button-select-close">Close</button>
+        <button id="button-select-auto">Automatic</button>
+        <div id="entry"></div>
+    </div>
+    <div class="actuate-selection">
+            <label for="actuate2">Irrigation Actuators</label>
+            <select id="actuate2" name="actuate2">
+                <option value="Pump On">Pump On</option>
+                <option value="Pump Off">Pump Off</option>
+          </select>
+            <button id="button-select-pump">Select</button>
+            <div id="entry2"></div>
+    </div>
+    <script src="actuate.js"></script>
     <script src="data.js"></script>
   </body>
 </html>
