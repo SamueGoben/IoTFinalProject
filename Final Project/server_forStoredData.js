@@ -19,6 +19,27 @@ const storage = new Storage({
 });
 
 let ListOfBuckets;
+let listOfObjects;
+let numBuckets = 0;
+
+function createArray(length) {
+  var arr = new Array(length || 0),
+      i = length;
+
+  if (arguments.length > 1) {
+      var args = Array.prototype.slice.call(arguments, 1);
+      while(i--) arr[length-1 - i] = createArray.apply(this, args);
+  }
+
+  return arr;
+}
+
+//remove a vlaue from an array
+function arrayRemove(arr, value) {
+  return arr.filter(function(ele){
+      return ele != value;
+  });
+}
 
 //list all buckets in project
 function listBuckets(_callback){
@@ -31,9 +52,9 @@ function listBuckets(_callback){
 
       //console.log(ListOfBuckets);
       //console.log('Buckets:');
-      // buckets.forEach(bucket => {
-      //   console.log(bucket.name);
-      // });
+      buckets.forEach(bucket => {
+        numBuckets = numBuckets + 1;
+      });
       _callback();
     })
     .catch(err => {
@@ -41,42 +62,96 @@ function listBuckets(_callback){
     });
 }
 
+//list all objects, given a name of a bucket, with currBucket being used to determine which value of array to put in files
+function listObjects(bucketName, currBucket, _callback){
+
+  console.log("list Objects: " + bucketName + " " + currBucket);
+  let arrNames;
+  storage
+    .bucket(bucketName).getFiles()
+
+    .then(results => {
+
+      const[files] = results[0];
+      console.log(files.name);
+      
+      // files.forEach(file => {
+
+      //   console.log(file.name);
+      //   arrNames.push(file.name);
+
+      // });
+
+    })
+
+    .then(results => {
+
+      //listOfObjects[currBucket] = arrNames;
+     
+    })
+
+    .catch(err => {
+      console.error('ERROR:', err);
+    });
+
+}
+
 http.createServer(function(request,response){    //#B
 
+  console.log(request.url);
 
-  // listBuckets(function() {
+  let requestData = request.url.split("?");
+  let determineData = requestData[1];
+  console.log(determineData);
+
+  if (determineData == "populate"){
+
+    listBuckets(function() {                            
       
-  //   console.log("here");
+      console.log("list of buckets populated");
+      let currSpot = 0;
+      console.log("numBuckets: "+ numBuckets);
+      numBuckets = numBuckets - 3;
+
+      listOfObjects = createArray(numBuckets, 1);
+
+      currBucket = 0;
+      
+      ListOfBuckets.forEach(bucket => {
+
+        if (bucket.name == "demodeploymentapp.appspot.com" ||
+              bucket.name == "presentation-data-bucket" ||
+               bucket.name == "staging.demodeploymentapp.appspot.com"){ //these are not relevant to and not necessary for project
+            
+          //console.log(bucket.name);
+          ListOfBuckets.splice(currSpot, currSpot);
+          currSpot = currSpot - 1;
+            
+        }
+
+        else{
+
+          console.log(bucket.name);
+
+          listObjects(bucket.name, currBucket, function(){
+
+              // listOfObjects.forEach(object =>{
+              //   console.log("object name: " + object.name);
+              // });
+            
+          });
+
+          currBucket = currBucket + 1;
+
+        }  //end of else
+        currSpot = currSpot + 1;
+
+      });
+    });
+
+  } //end of if statement
 
 
-  // });
-
-  let reqData = request.data;
-  console.log(request);
-
-  var x;
-  var headers = request.headers;
-  var trailers = request.trailers;
-
-  var decodeUrl = decodeURIComponent(request.url);
-  console.log(decodeUrl);
-
-  var split = decodeUrl.split("http");
-  var yelpURL = "http" + split[1];
-
-  // console.log('New incoming client request for ');
-  
-  // console.log('Request method: ' + request.method);
-  // console.log('Headers: ');
-  // for (x in headers) {
-  //   console.log('\t{' + x + ': \"' + headers[x] + '\"}');
-  // }
-  // console.log('Trailers: ');
-  // for (x in trailers) {
-  //   console.log('\t{' + x + ': \"' + trailers[x] + '\"}');
-  // }
-
-  console.log('here2');
 
 }).listen(port);    //#H
 console.log('Server listening on http://localhost:' + port);
