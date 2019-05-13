@@ -1,5 +1,5 @@
 {
-  "size": 1,
+  "size": 11,
   "data0": {
     "Name": "occupancy",
     "Date": "2019-5-12",
@@ -11,5 +11,65 @@
     "Date": "2019-5-12",
     "Time": "18:16:39",
     "Data": "1"
+  },
+  "data2": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "8:57:58",
+    "Data": "0"
+  },
+  "data3": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "8:58:22",
+    "Data": "1"
+  },
+  "data4": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "8:59:26",
+    "Data": "1"
+  },
+  "data5": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "9:1:36",
+    "Data": "0"
+  },
+  "data6": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "9:1:53",
+    "Data": "1"
+  },
+  "data7": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "9:2:31",
+    "Data": "0"
+  },
+  "data8": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "9:6:16",
+    "Data": "1"
+  },
+  "data9": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "9:7:28",
+    "Data": "0"
+  },
+  "data10": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "9:9:33",
+    "Data": "1"
+  },
+  "data11": {
+    "Name": "occupancy",
+    "Date": "2019-5-13",
+    "Time": "9:10:12",
+    "Data": "0"
   }
 }
