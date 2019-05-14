@@ -18,6 +18,18 @@ body {
     padding-left: 2.5%;
 }
 
+.change-location {
+    text-align: center;
+}
+
+.explanation {
+    text-align: center;
+}
+
+#logout {
+    margin-top: 1%;
+}
+
 #actuate {
     width: 200px;
 }
