@@ -19,22 +19,45 @@
   </head>
   <body>
     <nav class="nav-bar">
-      <a href="index.html" class="nav-bar-item">Home</a>
+      <a href="home.html" class="nav-bar-item">Home</a>
       <a href="CurrentData.html" class="nav-bar-item">Grab Current Data</a>
       <a href="StoredData.html" class="nav-bar-item">View Histrorical Data</a>
       <a href="About.html" class="nav-bar-item">About</a>
     </nav>
     <h1>Welcome to the Current Data</h1>
+    <div id = "no-data"></div>
     <div class="chart" style="width: 900px; height: 500px"></div>
     <div class="dataSelection">
       <label for="info">Select Data Entries</label>
       <select id="info" name="info">
-        <option value="Temperature">Temperature</option>
-        <option value="Humidity">Humidity</option>
+
       </select>
       <button id="button">Select</button>
       <div id="demo"></div>
     </div>
+    <div class="actuate-selection">
+        <label for="actuate">Sensor Actuators</label>
+        <select id="actuate" name="actuate">
+            <option value="Fan">Fan</option>
+            <option value="Vent">Vent</option>
+            <option value="Fan/Vent">Fan/Vent</option>
+      </select>
+        <button id="button-select-open">Open</button>
+        <button id="button-select-close">Close</button>
+        <button id="button-select-auto">Automatic</button>
+        <div id="entry"></div>
+    </div>
+    <div class="actuate-selection">
+            <label for="actuate2">Irrigation Actuators</label>
+            <select id="actuate2" name="actuate2">
+                <option value="Pump On">Pump On</option>
+                <option value="Pump Off">Pump Off</option>
+          </select>
+            <button id="button-select-pump">Select</button>
+            <div id="entry2"></div>
+    </div>
+    <!-- <script src="mqtt.js"></script> -->
+    <script src="actuate.js"></script>
     <script src="data.js"></script>
   </body>
 </html>
