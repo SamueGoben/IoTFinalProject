@@ -1,0 +1,117 @@
+{
+  "size": 18,
+  "data0": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:21:45",
+    "Data": "25.4"
+  },
+  "data1": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:23:3",
+    "Data": "24.2"
+  },
+  "data2": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:24:29",
+    "Data": "23.8"
+  },
+  "data3": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:37:57",
+    "Data": "30.2"
+  },
+  "data4": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:39:23",
+    "Data": "29.7"
+  },
+  "data5": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:42:50",
+    "Data": "27"
+  },
+  "data6": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:44:19",
+    "Data": "26.2"
+  },
+  "data7": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:46:40",
+    "Data": "27"
+  },
+  "data8": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:51:8",
+    "Data": "26"
+  },
+  "data9": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "16:53:33",
+    "Data": "25.3"
+  },
+  "data10": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "17:2:1",
+    "Data": "30.3"
+  },
+  "data11": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "17:3:27",
+    "Data": "30.6"
+  },
+  "data12": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "17:9:52",
+    "Data": "33.3"
+  },
+  "data13": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "17:13:18",
+    "Data": "33.1"
+  },
+  "data14": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "17:15:44",
+    "Data": "30.4"
+  },
+  "data15": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "17:17:10",
+    "Data": "29.8"
+  },
+  "data16": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "17:29:14",
+    "Data": "29.8"
+  },
+  "data17": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "17:35:37",
+    "Data": "30.8"
+  },
+  "data18": {
+    "Name": "humidity-percent",
+    "Date": "2019-5-13",
+    "Time": "17:37:5",
+    "Data": "30.2"
+  }
+}

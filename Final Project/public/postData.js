@@ -91,7 +91,7 @@ function createDataBucket(dataString, dataId, currField){
       var fs = require('fs');
       fs.writeFile(dataName, dataString);
 
-      let fileName = 'C:/Users/slavensr/Documents/ECE597/Final Project Website/IoTFinalProject/Final Project/' + dataName;
+      let fileName = 'C:/Users/slavensr/Documents/ECE597/Final Project Website/IoTFinalProject/Final Project/public/' + dataName;
 
       storage.bucket(bucketName).upload(fileName, {
 
@@ -110,7 +110,7 @@ function updateBucket(currData, dataId, currField){
   let bucketName = "project-" + dataId + "-datatype-" + currField;
   let dataName = "" + currField + "-dataset.json";
 
-  let destFilename = 'C:/Users/slavensr/Documents/ECE597/Final Project Website/IoTFinalProject/Final Project/' + dataName;
+  let destFilename = 'C:/Users/slavensr/Documents/ECE597/Final Project Website/IoTFinalProject/Final Project/public/' + dataName;
 
   const options = {
     // The path to which the file should be downloaded, e.g. "./file.txt"
@@ -235,7 +235,7 @@ function determineAPIfields(channel){
 
 }
 
-determineAPIfields('759369');
+determineAPIfields('480910');
 //console.log(fields[0]);
 
 // Connect to MQTT broker at Thingspeak

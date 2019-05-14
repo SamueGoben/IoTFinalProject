@@ -3,7 +3,7 @@
 
 // Example of simple server which displays info about incoming requests and sends simple response
 var http = require("http");    //#A
-var port = 9999;    // can use any port # you prefer (above 1024) - client must use same port #
+var port = process.env.PORT || 9999;    // can use any port # you prefer (above 1024) - client must use same port #
 var request2 = require('request');
 // anonymous function - function which handles requests to server
 // request - incoming request message
@@ -127,7 +127,7 @@ function populateData(findBucketName, findObjectName, _callback){
   console.log("object Name: " + findObjectName);
   console.log("in Populate Data");
 
-  let destFilename = 'C:/Users/slavensr/Documents/ECE597/Final Project Website/IoTFinalProject/Final Project/' + findObjectName;
+  let destFilename = 'C:/Users/slavensr/Documents/ECE597/Final Project Website/IoTFinalProject/Final Project/public/' + findObjectName;
 
   const options = {
     // The path to which the file should be downloaded, e.g. "./file.txt"
