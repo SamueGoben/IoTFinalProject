@@ -83,16 +83,8 @@ function populatePageData(dataRecv){
 
     console.log("in page data");
 
-    let dataStart = document.getElementById("displayData");
-
     let i = 0;
-    //opt.appendChild(document.createTextNode(name));
-
-    let temp = dataRecv.data0;
     
-    console.log(JSON.stringify(temp, undefined, 2));
-
-
     for(i = 0; i <= dataRecv.size; i++){
 
         let currPre = document.createElement('pre');
