@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Greenhouse DAQ</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-storage.js"></script>
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css"/>
+    <script src="rosefire.js"></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <a href="home.html" class="nav-bar-item">Home</a>
+      <a href="CurrentData.html" class="nav-bar-item">Grab Current Data</a>
+      <a href="StoredData.html" class="nav-bar-item">View Histrorical Data</a>
+      <a href="About.html" class="nav-bar-item">About</a>
+    </nav>
+
+    <div class="container">
+        <div class="mySlides fade">
+            <img src="img/livelyGreenhouse.jpg" alt="Outside" style="width:100%">
+            <div class="content">
+                <h1>Outside the Greenhouse</h1>
+                <p>This is what the exterior of the Greenhouse looks like. As it can be seen, the "Greenhouse" is 
+                  the literal green house fitted with translucent panels that allows light to come in and heat to stay in. There 
+                  is a smaller green house on the left which is the stroage shed that will hold any tools and equipment that is needed. 
+                  The solar panel is what is currently powering the Greenhouse.
+                  &copy; Rose-Hulman Institute of Technology/Bryan Cantwell
+                </p>
+            </div>
+        </div>
+          
+        <div class="mySlides fade">
+            <img src="img/GreenhouseInside.jpg" alt="Inside" style="width:100%">
+            <div class="content">
+                <h1>Inside the Greenhouse</h1>
+                <p>As shown in the above image, the interior of the Greenhouse needs a lot more work to become
+                  operational. The interior needs to be cleared out of the miscellaneous objects that are currently
+                  being stored, as well as fitted with sensors and actuators in order to collect data about the 
+                  Greenhouse. The ones tasked with completing this task will be the students of ECE 597, some of which
+                  are present in the above image.
+                </p>
+            </div>
+        </div>
+          
+        <div class="mySlides fade">
+            <img src="img/realPlants.jpg" alt="Vegetation" style="width:100%">
+            <div class="content">
+                <h1>Vegetation</h1>
+                <p>There are fourteen enclosures that are currently present just ouside the Greenhouse. Some of these enclosures 
+                  currently hold some plants, but they are still under construction and will eventually be fitted with a wider 
+                  variety of plant life. This location is also where the water irrigation system will be implemented, not only to be
+                  able to water the plants, but to also make sure there isn't flooding when it rains.
+                  &copy; Rose-Hulman Institute of Technology/Bryan Cantwell
+                </p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/waterBarrels.jpg" alt="Barrels" style="width:100%">
+            <div class="content">
+                <h1>Water Barrels</h1>
+                <p>These water barrels are going to be used by the water irrigation team in order to store water and be able
+                  to pump water into the Greenhouse. The water that is pumped in will then be used to water all of the plants 
+                  within the Greenhouse.
+                </p>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  </body>
+</html>
