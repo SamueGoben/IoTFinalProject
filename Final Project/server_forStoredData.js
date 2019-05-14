@@ -16,6 +16,7 @@ const {Storage} = require('@google-cloud/storage');
 // helper, see https://github.com/GoogleCloudPlatform/google-cloud-node/blob/master/docs/authentication.md
 const storage = new Storage({
   projectId: 'demodeploymentapp',
+  //keyFilename: 'C:/Users/slavensr/Downloads/demodeploymentapp-4504f8886214.json',
   keyFilename: 'C:/Users/slavensr/Downloads/demodeploymentapp-4504f8886214.json', //this is a local file, will need to be changed to relative location of individual json credential file
 });
 
@@ -211,9 +212,7 @@ http.createServer(function(request,response){    //#B
 
     });
 
-
   }
-
 
 
 }).listen(port);    //#H
