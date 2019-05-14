@@ -2,6 +2,7 @@ var type;
 var button;
 var num;
 var fillIn;
+var pump;
 
 document.getElementById("button-select-open").onclick = function () {OpenFunction();};
 
@@ -30,6 +31,8 @@ function OpenFunction() {
     
     document.getElementById("entry").innerHTML = button + ' ' + type + fillIn;
     document.getElementById("entry").style.color = "red";
+
+    getdata();
 }
 
 function CloseFunction() {
@@ -44,13 +47,15 @@ function CloseFunction() {
         num = -2;
         fillIn = ", Fan Automatic";
     }
-    else if (type == "Fan and Vent") {
+    else if (type == "Fan/Vent") {
         num = -3;
         fillIn = " ";
     }
     
     document.getElementById("entry").innerHTML = button + ' ' + type + fillIn;
     document.getElementById("entry").style.color = "red";
+
+    getdata();
 }
 
 function AutoFunction() {
@@ -62,11 +67,75 @@ function AutoFunction() {
     
     document.getElementById("entry").innerHTML = fillIn;
     document.getElementById("entry").style.color = "red";
+
+    getdata();
 }
 
 function PumpFunction() {
     type = document.getElementById("actuate2").value;
     
+    if (type == "Pump On") pump = 1;
+    else if (type == "Pump Off") pump = 0;
+
     document.getElementById("entry2").innerHTML = type;
     document.getElementById("entry2").style.color = "red";
+
+    getdata2();
+}
+
+function getdata(){
+    var echoUrl = 'http://localhost:8888/testing_echo_server';
+    var send = type + button;
+    if (button == "Automatic") send = button;
+
+    $(document).ready( //#A
+    $.ajax({    //#B
+        traditional: true,
+        type: "GET",
+        dataType: "json",
+        data: send,
+        url: echoUrl,
+        success: function(data1) {
+            console.log("hello");   
+            console.log(data1.data1);
+
+            console.log("it's me");
+            console.log(data1);
+
+            jsonObj = data1;
+
+        }, 
+        error: function(err){
+          console.log(err);
+        }
+    })
+    );
+}
+
+function getdata2(){
+    var echoUrl = 'http://localhost:8888/testing_echo_server';
+    var send = pump.toString();
+
+    $(document).ready( //#A
+    $.ajax({    //#B
+        traditional: true,
+        type: "GET",
+        dataType: "json",
+        data: send,
+        url: echoUrl,
+        success: function(data1) {
+            console.log("hello");   
+            console.log(data1.data1);
+
+            console.log("it's me");
+            console.log(data1);
+
+            jsonObj = data1;
+
+        }, 
+        error: function(err){
+          console.log(err);
+        }
+    })
+    );
 }

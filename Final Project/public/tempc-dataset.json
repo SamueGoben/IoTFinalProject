@@ -1,0 +1,75 @@
+{
+  "size": 11,
+  "data0": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "8:58:54",
+    "Data": "25.40"
+  },
+  "data1": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:2:55",
+    "Data": "25.40"
+  },
+  "data2": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:6:55",
+    "Data": "25.20"
+  },
+  "data3": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:10:56",
+    "Data": "24.80"
+  },
+  "data4": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:14:56",
+    "Data": "24.60"
+  },
+  "data5": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:18:57",
+    "Data": "24.50"
+  },
+  "data6": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:22:57",
+    "Data": "24.50"
+  },
+  "data7": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:26:58",
+    "Data": "24.50"
+  },
+  "data8": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:31:2",
+    "Data": "24.50"
+  },
+  "data9": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:34:59",
+    "Data": "24.20"
+  },
+  "data10": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:38:59",
+    "Data": "24.30"
+  },
+  "data11": {
+    "Name": "tempc",
+    "Date": "2019-5-13",
+    "Time": "9:43:0",
+    "Data": "24.20"
+  }
+}
