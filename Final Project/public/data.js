@@ -267,7 +267,8 @@ function selectFunction(firstClick, breakFunc) {
   //$(document).ready(function () {
     console.log("in select Function");
     myLoop();
-    
+    //this function is used periodically check if any new messages have be recieved from
+    // the server
     function myLoop(){
 
       console.log("brakFunc:" + breakFunc);

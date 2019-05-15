@@ -8,7 +8,7 @@ let dataBucket;
 let dataObject;
 
 let dataNum;
-
+//populate form on webpage with names of google storage buckets avaialbe
 function populateForm(Buckets, Objects){
 
     let bucketForm = document.getElementById("buckets");
@@ -44,6 +44,7 @@ function populateForm(Buckets, Objects){
 
 }
 
+//make call to server to return list of google cloud storage buckets
 function chooseData(){
 
     console.log("start making form");
@@ -78,7 +79,7 @@ function chooseData(){
     })
     );
 }
-
+//based off data recieved, poulate the page with new data
 function populatePageData(dataRecv){
 
     console.log("in page data");
@@ -118,7 +119,7 @@ function populatePageData(dataRecv){
     }
 
 }
-
+//make call to server to return data concerning selected storage bucket
 function getData(_callback){
 
     console.log("in get data");
