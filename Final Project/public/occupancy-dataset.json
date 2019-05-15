@@ -1,5 +1,5 @@
 {
-  "size": 84,
+  "size": 86,
   "data0": {
     "Name": "occupancy",
     "Date": "2019-5-12",
@@ -508,6 +508,18 @@
     "Name": "occupancy",
     "Date": "2019-5-14",
     "Time": "14:5:47",
+    "Data": "0"
+  },
+  "data85": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "11:56:49",
+    "Data": "1"
+  },
+  "data86": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "11:57:24",
     "Data": "0"
   }
 }

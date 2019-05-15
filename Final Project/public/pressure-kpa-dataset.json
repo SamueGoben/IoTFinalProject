@@ -1,5 +1,5 @@
 {
-  "size": 18,
+  "size": 20,
   "data0": {
     "Name": "pressure-kpa",
     "Date": "2019-5-13",
@@ -113,5 +113,17 @@
     "Date": "2019-5-13",
     "Time": "17:37:5",
     "Data": "995.5"
+  },
+  "data19": {
+    "Name": "pressure-kpa",
+    "Date": "2019-5-15",
+    "Time": "11:56:20",
+    "Data": "998"
+  },
+  "data20": {
+    "Name": "pressure-kpa",
+    "Date": "2019-5-15",
+    "Time": "11:58:13",
+    "Data": "997.9"
   }
 }

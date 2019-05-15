@@ -202,6 +202,9 @@ function getCurrentData(identify, _callback){
   getChannelData(channelIDDetermine, fieldIDDetermine, function(){
 
     console.log(subTopic);
+    console.log("in get channel data");
+
+    let startTime = new Date().getTime();
 
     var mqtt = require('mqtt');
     var client  = mqtt.connect('mqtt://mqtt.thingspeak.com:1883', {username: 'user', password: mqttAPIKey});
@@ -209,9 +212,19 @@ function getCurrentData(identify, _callback){
     client.on('connect', function () {
       console.log('MQTT connection established');
       client.subscribe(subTopic);
+
+      setTimeout(function(){
+
+        console.log("in timeout func");
+        retData = 'no Data';
+        console.log("no new data");
+        client.end();
+        _callback();
+
+      }, 20000);
     
     });
-  
+
     client.on('message', function (topic, message) {
     
       console.log(topic + ': ' + message.toString());
@@ -223,6 +236,45 @@ function getCurrentData(identify, _callback){
       _callback();
 
     });
+
+    // while (new Date().getTime() - startTime < 30000){
+
+    //   console.log("in while loop");
+
+    //   // client.on('message', function (topic, message) {
+    
+    //   //   console.log(topic + ': ' + message.toString());
+    //   //   var fields = topic.split('/');
+      
+    //   //   console.log(message.toString());
+    //   //   retData = message.toString().trim();
+    //   //   client.end();
+    //   //   _callback();
+  
+    //   // });
+
+    //   if (new Date().getTime() - startTime > 30000){
+
+    //     retData = 'no Data';
+    //     console.log("no new data");
+    //     client.end();
+    //     _callback();
+
+    //   }
+
+    // }
+
+    if (new Date().getTime() - startTime > 30000){
+      console.log("in if statement");
+      retData = 'no Data';
+      console.log("no new data");
+      client.end();
+      _callback();
+
+    }
+
+  
+
 
   });
 

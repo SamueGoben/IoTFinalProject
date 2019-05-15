@@ -80,6 +80,9 @@ var track = 0;
 var begin = 'temperature';
 
 let retData;
+let oldData = "no Data yet";
+let statement1 = "no Data";
+let statement2 = "no Data yet";
 let breakVal = 1;
 let breakFunc = 0;
 let firstClick = 0;
@@ -125,6 +128,9 @@ function getCurrentData(dataToGet, _callback){
         console.log("success");   
         console.log(data1);
         retData = data1;
+        if (retData != 'no Data'){
+          oldData = retData;
+        }
         breakVal = 0;
 
         _callback();
@@ -171,23 +177,43 @@ function beginLoop(dataToGet, _callback){
 
   getCurrentData(dataToGet, function(){
 
-    console.log("in Get current data callback");
+    console.log("in Get current data callback: " + retData + " " + oldData);
+    console.log(oldData === statement2);
 
-    if (breakVal == 0){
-      document.getElementById("no-data").innerHTML = " ";
-      addDataPoint(retData, function(){
-        console.log("in add atat point callback");
+    if (retData == 'no Data'){
+      console.log("ret Data is no Data");
+      if (oldData == statement2){
+        document.getElementById("no-data").innerHTML = "No Current Data to Display Yet";
         _callback();
-      });
-
+      }
+      else{
+          document.getElementById("no-data").innerHTML = " ";
+          addDataPoint(oldData, function(){
+            console.log("in add atat point callback");
+          _callback();
+        });
+      }
     }
-
     else{
-      document.getElementById("no-data").innerHTML = "No Current Data to Display Yet";
+
+      if (breakVal == 0){
+        document.getElementById("no-data").innerHTML = " ";
+        addDataPoint(retData, function(){
+          console.log("in add atat point callback");
+          _callback();
+        });
+  
+      }
+  
+      else{
+        document.getElementById("no-data").innerHTML = "No Current Data to Display Yet";
+        _callback();
+      }
+
     }
 
 
-    
+
   });
 
 }
