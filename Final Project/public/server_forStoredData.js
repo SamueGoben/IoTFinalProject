@@ -80,6 +80,9 @@ function listObjects(bucketName, currBucket, _callback){
     .then(results => {
 
       const[files] = results[0];
+      console.log("in list Objects");
+      //console.log(files);
+      
       
       listOfObjects.push(files.name);
       currBucketGlobal = currBucketGlobal + 1;
@@ -173,6 +176,7 @@ http.createServer(function(request,response){    //#B
   if (determineData == "populateForm"){
 
     populateForm(function(){
+      console.log("in populate From callback");
       
       let jsonListOfBuckets = JSON.stringify(ListOfBuckets);
       let jsonListOfObjects = JSON.stringify(listOfObjects);

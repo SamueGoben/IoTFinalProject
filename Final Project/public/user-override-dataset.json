@@ -1,5 +1,5 @@
 {
-  "size": 3,
+  "size": 14,
   "data0": {
     "Name": "user-override",
     "Date": "2019-5-13",
@@ -23,5 +23,71 @@
     "Date": "2019-5-14",
     "Time": "8:51:53",
     "Data": "-1"
+  },
+  "data4": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "12:32:8",
+    "Data": "1"
+  },
+  "data5": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "12:32:15",
+    "Data": "-1"
+  },
+  "data6": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "12:42:17",
+    "Data": "1"
+  },
+  "data7": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "12:42:35",
+    "Data": "-1"
+  },
+  "data8": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "12:42:51",
+    "Data": "0"
+  },
+  "data9": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "13:47:46",
+    "Data": "-1"
+  },
+  "data10": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "14:5:56",
+    "Data": "0"
+  },
+  "data11": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "16:16:23",
+    "Data": "-1"
+  },
+  "data12": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "16:16:44",
+    "Data": "0"
+  },
+  "data13": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "16:18:44",
+    "Data": "0"
+  },
+  "data14": {
+    "Name": "user-override",
+    "Date": "2019-5-15",
+    "Time": "16:20:44",
+    "Data": "0"
   }
 }

@@ -39,7 +39,7 @@ const storage = new Storage({
 
 let ListOfBuckets;
 
-//list all buckets in project
+//list all buckets in google cloud project
 function listBuckets(_callback){
 
   storage
@@ -60,7 +60,7 @@ function listBuckets(_callback){
     });
 }
 
-//creates a bucket for our project. bucket Name is currently set when function is called
+//creates a bucket for our google cloud storage project. bucket Name is currently set when function is called
 function createBucket(bucketName, _callback){
 
   storage
@@ -102,7 +102,7 @@ function createDataBucket(dataString, dataId, currField){
   });
 }
 
-
+//if bucket for data already exists, update bucket instead of making a new one
 function updateBucket(currData, dataId, currField){
 
   console.log('start update bucket');
@@ -190,6 +190,7 @@ var pubTopic;
 var subTopic;
 var pubTimer;
 
+//based off channel recieved, will determine api fields for connecting to thingspeak
 function determineAPIfields(channel){
 
   if (channel == '480910'){

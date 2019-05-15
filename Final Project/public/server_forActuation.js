@@ -1,5 +1,10 @@
 /* jshint esversion: 6 */
 
+//This file handles communication between the web application and thingspeak
+//primarily in regards to handling publish to fields that allow for writing to in thingspeak
+//also it subscribes to channels in thingspeak, that are used to send current data back
+//to the webstie
+
 // Example of simple server which displays info about incoming requests and sends simple response
 var http = require("http");    //#A
 var port = 8888;    // can use any port # you prefer (above 1024) - client must use same port #
@@ -12,7 +17,8 @@ var num;
 var pump;
 
 var oldVal;
-
+//actuate the override field in thingspeak using mqtt
+//team temperature and humidity
 function overrideMqtt(num) {
   // Example of MQTT client application
   //  Connects to MQTT broker on Thingspeak
@@ -45,7 +51,8 @@ function overrideMqtt(num) {
       process.exit();
   });
 }
-
+//actuate the pump field in thingspeak using mqtt
+//team irrigation
 function pumpMqtt(pump) {
   // Example of MQTT client application
   //  Connects to MQTT broker on Thingspeak
@@ -88,6 +95,7 @@ let projectFields;
 
 let retData;
 
+//determine which thingSpeak channel to access and which field to access
 function getChannelData(channelIDDetermine, fieldIDDetermine, _callback){
 
   console.log("in get Channel Data");
@@ -189,6 +197,7 @@ function getChannelData(channelIDDetermine, fieldIDDetermine, _callback){
 
 }
 
+//get current data using mqtt subscribe to thingspeak channels/fields
 function getCurrentData(identify, _callback){
 
   console.log("in Get current data");
@@ -221,7 +230,7 @@ function getCurrentData(identify, _callback){
         client.end();
         _callback();
 
-      }, 20000);
+      }, 20000); //this time out function will help get rid of errors in no responses
     
     });
 

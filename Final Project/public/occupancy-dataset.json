@@ -1,5 +1,5 @@
 {
-  "size": 86,
+  "size": 168,
   "data0": {
     "Name": "occupancy",
     "Date": "2019-5-12",
@@ -520,6 +520,498 @@
     "Name": "occupancy",
     "Date": "2019-5-15",
     "Time": "11:57:24",
+    "Data": "0"
+  },
+  "data87": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:0:13",
+    "Data": "0"
+  },
+  "data88": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:1:36",
+    "Data": "0"
+  },
+  "data89": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:4:58",
+    "Data": "1"
+  },
+  "data90": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:5:33",
+    "Data": "0"
+  },
+  "data91": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:9:14",
+    "Data": "1"
+  },
+  "data92": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:10:20",
+    "Data": "0"
+  },
+  "data93": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:17:22",
+    "Data": "1"
+  },
+  "data94": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:17:57",
+    "Data": "0"
+  },
+  "data95": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:22:37",
+    "Data": "1"
+  },
+  "data96": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:23:12",
+    "Data": "0"
+  },
+  "data97": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:31:42",
+    "Data": "1"
+  },
+  "data98": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:31:56",
+    "Data": "0"
+  },
+  "data99": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:35:52",
+    "Data": "1"
+  },
+  "data100": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:36:9",
+    "Data": "0"
+  },
+  "data101": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:40:15",
+    "Data": "1"
+  },
+  "data102": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:40:50",
+    "Data": "0"
+  },
+  "data103": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:43:10",
+    "Data": "1"
+  },
+  "data104": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:43:58",
+    "Data": "0"
+  },
+  "data105": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:48:21",
+    "Data": "1"
+  },
+  "data106": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:48:57",
+    "Data": "0"
+  },
+  "data107": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:55:57",
+    "Data": "1"
+  },
+  "data108": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:56:32",
+    "Data": "0"
+  },
+  "data109": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "12:59:55",
+    "Data": "1"
+  },
+  "data110": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:0:12",
+    "Data": "0"
+  },
+  "data111": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:1:22",
+    "Data": "1"
+  },
+  "data112": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:1:57",
+    "Data": "0"
+  },
+  "data113": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:8:15",
+    "Data": "1"
+  },
+  "data114": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:8:50",
+    "Data": "0"
+  },
+  "data115": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:11:57",
+    "Data": "1"
+  },
+  "data116": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:12:13",
+    "Data": "0"
+  },
+  "data117": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:14:15",
+    "Data": "1"
+  },
+  "data118": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:14:50",
+    "Data": "0"
+  },
+  "data119": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:20:32",
+    "Data": "1"
+  },
+  "data120": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:21:8",
+    "Data": "0"
+  },
+  "data121": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:27:9",
+    "Data": "1"
+  },
+  "data122": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:27:59",
+    "Data": "0"
+  },
+  "data123": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:32:15",
+    "Data": "1"
+  },
+  "data124": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:32:50",
+    "Data": "0"
+  },
+  "data125": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:33:6",
+    "Data": "1"
+  },
+  "data126": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:33:26",
+    "Data": "0"
+  },
+  "data127": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:40:1",
+    "Data": "1"
+  },
+  "data128": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:40:35",
+    "Data": "0"
+  },
+  "data129": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:43:3",
+    "Data": "1"
+  },
+  "data130": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:44:1",
+    "Data": "0"
+  },
+  "data131": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:45:8",
+    "Data": "1"
+  },
+  "data132": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:45:42",
+    "Data": "0"
+  },
+  "data133": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:52:52",
+    "Data": "1"
+  },
+  "data134": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:53:26",
+    "Data": "0"
+  },
+  "data135": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:54:37",
+    "Data": "1"
+  },
+  "data136": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:55:12",
+    "Data": "0"
+  },
+  "data137": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:57:22",
+    "Data": "1"
+  },
+  "data138": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:57:58",
+    "Data": "0"
+  },
+  "data139": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "13:59:26",
+    "Data": "1"
+  },
+  "data140": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:0:15",
+    "Data": "0"
+  },
+  "data141": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:5:46",
+    "Data": "1"
+  },
+  "data142": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:6:21",
+    "Data": "0"
+  },
+  "data143": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:9:37",
+    "Data": "1"
+  },
+  "data144": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:10:12",
+    "Data": "0"
+  },
+  "data145": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:14:11",
+    "Data": "1"
+  },
+  "data146": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:14:46",
+    "Data": "0"
+  },
+  "data147": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:18:37",
+    "Data": "1"
+  },
+  "data148": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:19:11",
+    "Data": "0"
+  },
+  "data149": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:22:4",
+    "Data": "1"
+  },
+  "data150": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:22:40",
+    "Data": "0"
+  },
+  "data151": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:31:29",
+    "Data": "1"
+  },
+  "data152": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:32:17",
+    "Data": "0"
+  },
+  "data153": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:34:27",
+    "Data": "1"
+  },
+  "data154": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:35:2",
+    "Data": "0"
+  },
+  "data155": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:44:13",
+    "Data": "1"
+  },
+  "data156": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:44:48",
+    "Data": "0"
+  },
+  "data157": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:45:26",
+    "Data": "1"
+  },
+  "data158": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:46:1",
+    "Data": "0"
+  },
+  "data159": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:46:44",
+    "Data": "1"
+  },
+  "data160": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "14:47:19",
+    "Data": "0"
+  },
+  "data161": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "16:13:10",
+    "Data": "1"
+  },
+  "data162": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "16:14:6",
+    "Data": "0"
+  },
+  "data163": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "16:18:15",
+    "Data": "1"
+  },
+  "data164": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "16:18:49",
+    "Data": "0"
+  },
+  "data165": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "16:25:24",
+    "Data": "1"
+  },
+  "data166": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "16:25:59",
+    "Data": "0"
+  },
+  "data167": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "16:26:15",
+    "Data": "1"
+  },
+  "data168": {
+    "Name": "occupancy",
+    "Date": "2019-5-15",
+    "Time": "16:27:16",
     "Data": "0"
   }
 }
